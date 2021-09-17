@@ -13,3 +13,4 @@ Work Schedule:
 1: I tried installing the finished repo of this morning's tutorial so I could see what it was supposed to be like, but even that didn't work. I'm moving on to some other tutorials.
 2:15: Working on another tutorial. This isn't very exciting to read about, I imagine.
 3: Doing some work on my actual project (which will probably get scrapped a couple of times)
+3:45: Starting to add some js files to my project
