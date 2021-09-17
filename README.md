@@ -14,3 +14,4 @@ Work Schedule:
 2:15: Working on another tutorial. This isn't very exciting to read about, I imagine.
 3: Doing some work on my actual project (which will probably get scrapped a couple of times)
 3:45: Starting to add some js files to my project
+4:40: Getting pretty deep into learning about hooks
