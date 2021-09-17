@@ -7,4 +7,7 @@ Work Schedule:
 
 6-8: Catching up on some career services stuff and reading about Firebase
 8-10: React Native CRUD tutorial with Firebase
-10-11: Still working on this stupid tutorial
+10: Still working on this stupid tutorial
+11:Why do tutorials always start by having you install a bunch of modules that cause a ton of problems, so then you uninstall them all and the rest of the tutorial works fine?
+12:Lunch
+1: I tried installing the finished repo of this morning's tutorial so I could see what it was supposed to be like, but even that didn't work. I'm moving on to some other tutorials.
