@@ -11,3 +11,4 @@ Work Schedule:
 11:Why do tutorials always start by having you install a bunch of modules that cause a ton of problems, so then you uninstall them all and the rest of the tutorial works fine?
 12:Lunch
 1: I tried installing the finished repo of this morning's tutorial so I could see what it was supposed to be like, but even that didn't work. I'm moving on to some other tutorials.
+2:15: Working on another tutorial. This isn't very exciting to read about, I imagine.
