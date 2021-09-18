@@ -2,7 +2,24 @@ import React, { useState } from 'react'
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './styles';
-import { firebase } from '../../firebase/config'
+// import { firebase } from '../../firebase/config';
+import { firebase } from '@firebase/app'
+// import { firebase } from 'firebase'
+// import '@firebase/auth'
+import '@firebase/auth'
+import '@firebase/firestore'
+import { initializeApp, app } from "firebase/app";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCBU0opnzvAjxhNAJBIjKrogrw-Sus-NaM",
+    authDomain: "swimpnw.firebaseapp.com",
+    projectId: "swimpnw",
+    storageBucket: "swimpnw.appspot.com",
+    messagingSenderId: "346492400252",
+    appId: "1:346492400252:web:c4d03fc26f3578da684ff9"
+  };
+
+
 
 export default function RegistrationScreen({navigation}) {
     const [fullName, setFullName] = useState('')
@@ -15,6 +32,11 @@ export default function RegistrationScreen({navigation}) {
     }
 
     const onRegisterPress = () => {
+        if (!firebase.apps.length) {
+            firebase.initializeApp(firebaseConfig);
+         }else {
+            firebase.app(); // if already initialized, use that one
+         }
         if (password !== confirmPassword) {
             alert("Passwords don't match.")
             return
@@ -34,7 +56,7 @@ export default function RegistrationScreen({navigation}) {
                     .doc(uid)
                     .set(data)
                     .then(() => {
-                        navigation.navigate('Home', {user: data})
+                        navigation.navigate('Login', {user: data})
                     })
                     .catch((error) => {
                         alert(error)
@@ -44,6 +66,7 @@ export default function RegistrationScreen({navigation}) {
                 alert(error)
         });
     }
+
     return (
         <View style={styles.container}>
             <KeyboardAwareScrollView
